@@ -6,12 +6,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Soulo – Voor zorg met hart en ziel</title>
+  <title>Soulo – Zorg met een verhaal</title>
 
   <!-- Styles -->
-  <link href="http://prisma.test/css/app.css" rel="stylesheet">
+  <link href="http://app.soulo.be/css/app.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/bkl2pjk.css">
+
+  <style>
+  main > .container-fluid {
+    border-bottom: 1px solid #EDEDED; padding-left: 0; 
+    background-size: 50%;
+    background-image: url(http://app.soulo.be/img/illustration/home-mamaoma.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    min-height: 300px;
+  }
+
+  .logo {
+    width: 200px; 
+    display: block;
+  }
+/*768px*/
+/*576px*/
+  @media only screen and (max-width: 768px) {
+    main > .container-fluid {
+      background-size: 100%;
+      min-height: 520px;
+    }
+
+    .logo {
+      width: 150px; 
+      display: block;
+      margin-top: 2rem !important;
+    }
+
+    .content {
+      margin-top: 1rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 576px)  {
+    .content { min-height: 70vh; }
+  }
+
+
+</style>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-albums">
@@ -20,31 +60,29 @@
 
     <main role="main">
 
-      <img src="logo.png" alt="Soulo logo" class="mx-auto mt-5" style="width:250px; display: block">
-      <p class="lead text-center">Voor zorg met hart en ziel</p>
+      <img src="logo.png" alt="Soulo logo" class="mx-auto mt-5 logo">
+      <p class="lead text-center">Zorg met een verhaal</p>
 
-      <div class="container-fluid"  style="border-bottom: 1px solid #EDEDED; padding-left: 0; background-size: 50%;
-      background-image: url(http://prisma.test/img/illustration/home-mamaoma.jpg);
-      background-repeat: no-repeat;
-      background-position: bottom left;
-      min-height: 400px;" >
+      <div class="container-fluid" style="" >
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6" style="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" style="">
 
-          </div>
+            </div>
 
-          <div class="col-md-6 mb-5 mt-5">
+            <div class="content col-lg-6 mb-5 mt-5">
 
-            <h2 class="text-primary">Binnenkort beschikbaar</h2>
+              <h2 class="text-primary">Binnenkort beschikbaar</h2>
 
-            <p>Soulo lanceert 22 september tijdens Werelddag Dementie. Wil je alvast meer weten? Contacteer oprichter <a href="mailto:frederik.vincx@gmail.com">Frederik Vincx</a>.</p>
+              <p>Soulo lanceert 22 september tijdens Werelddag Dementie. Wil je alvast meer weten? Contacteer oprichter <a href="mailto:frederik.vincx@gmail.com">Frederik Vincx</a>.</p>
 
-            <hr>
-            <p>Gebruik je Soulo al?</p>
+              <hr>
+              <p>Gebruik je Soulo al?</p>
 
-            <a href="http://prisma.test/" class="btn btn-outline-light">Meld je aan</a>
+              <a href="http://app.soulo.be/" class="btn btn-outline-light">Meld je aan</a>
+
+            </div>
 
           </div>
 
@@ -52,32 +90,30 @@
 
       </div>
 
-    </div>
+    </main>
 
-  </main>
-
-  <footer class="footer d-print-none">
-    <ul class="nav justify-content-center">
+    <footer class="footer d-print-none">
+      <ul class="nav justify-content-center">
 
 
-      <li class="nav-item">
-        <a class="nav-link" href="https://prisma.care/helppagina/" target="_blank">Documentatie</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://prisma.care/helppagina/" target="_blank">Documentatie</a>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="https://prisma.care/over-prisma/" target="_blank">Over Soulo</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://prisma.care/over-prisma/" target="_blank">Over Soulo</a>
+        </li>
 
-    </ul>
-  </footer>
+      </ul>
+    </footer>
 
-</div>
+  </div>
 
 
-<script src="//code.jquery.com/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/vue"></script>
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue"></script>
 
 
 
