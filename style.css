@@ -1,0 +1,43 @@
+main > .container-fluid {
+    border-bottom: 1px solid #EDEDED; padding-left: 0; 
+    background-size: 50%;
+    background-image: url(http://app.soulo.be/img/illustration/home-mamaoma.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    min-height: 300px;
+  }
+
+  .logo {
+    width: 200px; 
+    display: block;
+  }
+/*768px*/
+/*576px*/
+  @media only screen and (max-width: 768px) {
+    main > .container-fluid {
+      background-size: 100%;
+      min-height: 520px;
+    }
+
+    .logo {
+      width: 150px; 
+      display: block;
+      margin-top: 2rem !important;
+    }
+
+    .content {
+      margin-top: 1rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 576px)  {
+    .content { min-height: 70vh; }
+  }
+
+  @media only screen (min-width: 992px)  {
+    .content { min-height: 42vh; }
+  }
+
+   @media only screen and (min-width: 1200px)  {
+    .content { min-height: 46vh; }
+  }
